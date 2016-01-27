@@ -55,6 +55,8 @@ function processTag(type, item) {
  */
 function parse(err, resp, html) {
   items = [];
+  
+  console.log(html);
 
   if (err) return console.error(err)
   var parsedHTML = $.load(html)
